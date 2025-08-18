@@ -11,9 +11,9 @@ import { PNGtoPDFConverterDesktop } from "./png-to-pdf-converter-desktop";
 
 export const portfolioItems: portfolioItem[] = [
   JPGtoPDFConverterWeb,
-  JPGtoPDFConverterDesktop,
   PNGtoPDFConverterWeb,
-  PNGtoPDFConverterDesktop,
   TIFFtoPDFConverterWeb,
+  JPGtoPDFConverterDesktop,
+  PNGtoPDFConverterDesktop,
   TIFFtoPDFConverterDesktop,
 ];

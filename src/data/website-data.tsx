@@ -8,14 +8,45 @@ export const copyrightYear: string = new Date().getFullYear().toString();
 
 export enum HeaderNavItems {
   Home = "home",
-  Pricing = "purchase",
   Contact = "contact",
 }
 export const headerNavItems: string[] = [
   HeaderNavItems.Home,
-  HeaderNavItems.Pricing,
   HeaderNavItems.Contact,
 ];
+export const websiteURL: string = "http://image-to-pdf-converter.com/";
+export const indexMetadata: Metadata = {
+  title: "Image to PDF Converter - JPG, PNG & TIFF to PDF Online",
+  description:
+    "Convert JPG, PNG, and TIFF images to PDF quickly and securely. Free online image to PDF converter with high-quality results and no file uploads required.",
+  openGraph: {
+    title: "Image to PDF Converter - JPG, PNG & TIFF to PDF Online",
+    description:
+      "Easily convert your images to PDF format. Turn JPG, PNG, and TIFF files into high-quality PDFs instantly with our secure and easy-to-use converter.",
+    url: `${websiteURL}`,
+    siteName: "Image to PDF Converter",
+    images: [
+      {
+        url: "https://res.cloudinary.com/dgq2mp4fs/image/upload/v1721890438/frameworkteam/hero-img.png",
+        width: 539,
+        height: 438,
+        alt: "Convert JPG, PNG, and TIFF to PDF Online",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+    },
+  },
+};
 
 export const productImages = {
   JPGtoPDFConverterWeb: {
@@ -44,25 +75,13 @@ export const productImages = {
   },
   TIFFtoPDFConverterWeb: {
     title: "TIFF to PDF Converter Online",
-    imgName: `/${headerCompanyName.toLowerCase()}/${"ptiff-to-pdf-converter-web-icon".toLowerCase()}`,
+    imgName: `/${headerCompanyName.toLowerCase()}/${"tiff-to-pdf-converter-web-icon".toLowerCase()}`,
     width: 1024,
     height: 1024,
   },
   TIFFtoPDFConverterDesktop: {
     title: "TIFF to PDF Converter",
     imgName: `/${headerCompanyName.toLowerCase()}/${"tiff-to-pdf-converter".toLowerCase()}`,
-    width: 756,
-    height: 463,
-  },
-  TIFFtoPDFConverterSettings: {
-    title: "TIFF to PDF Converter Settings",
-    imgName: `/${headerCompanyName.toLowerCase()}/${"tiff-to-pdf-converter-settings".toLowerCase()}`,
-    width: 756,
-    height: 463,
-  },
-  TIFFtoPDFConverterFilesSelected: {
-    title: "TIFF to PDF Converter Files Selected",
-    imgName: `/${headerCompanyName.toLowerCase()}/${"tiff-to-pdf-converter-files-selected".toLowerCase()}`,
     width: 756,
     height: 463,
   },

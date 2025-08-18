@@ -2,15 +2,10 @@
 import { Metadata } from "next";
 //Internal Imports
 import Contact from "@/components/contact";
-import { portfolioItems } from "@/data/portfolio-items";
 import Hero from "@/components/hero";
-import { ProductIDs } from "@/data/website-data";
+import { indexMetadata } from "@/data/website-data";
 
-const portfolioItemDesktop = portfolioItems.find(
-  (item) => item.id === ProductIDs.TIFFtoPDFConverterDesktop,
-);
-
-export const metadata: Metadata = portfolioItemDesktop?.metaData ?? {};
+export const metadata: Metadata = indexMetadata;
 export default function Home() {
   return (
     <>
