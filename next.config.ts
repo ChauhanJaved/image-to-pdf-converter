@@ -1,7 +1,10 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: "export",
+  images: {
+    loader: "custom",
+    loaderFile: "./src/lib/cloudinary-loader.ts",
+  },
 };
 
 export default nextConfig;
