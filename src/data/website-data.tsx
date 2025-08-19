@@ -14,23 +14,41 @@ export const headerNavItems: string[] = [
   HeaderNavItems.Home,
   HeaderNavItems.Contact,
 ];
-export const websiteURL: string = "http://image-to-pdf-converter.com/";
+export const websiteURL: string = "http://image-to-pdf-converter.com";
 export const indexMetadata: Metadata = {
-  title: "Image to PDF Converter - JPG, PNG & TIFF to PDF Online",
+  title:
+    "JPG to PDF, PNG to PDF & TIFF to PDF Converter (Online & Desktop App)",
   description:
-    "Convert JPG, PNG, and TIFF images to PDF quickly and securely. Free online image to PDF converter with high-quality results and no file uploads required.",
+    "Convert JPG, PNG, and TIFF images to PDF instantly with our free online converters or offline desktop apps. Fast, secure, and privacy-friendly—no file uploads required.",
+  keywords: [
+    "jpg to pdf converter online",
+    "png to pdf converter online",
+    "tiff to pdf converter online",
+    "jpg to pdf desktop app",
+    "png to pdf desktop app",
+    "tiff to pdf desktop app",
+    "image to pdf converter",
+    "convert images to pdf",
+    "offline pdf converter",
+    "secure pdf converter",
+    "free image to pdf tool",
+  ],
+  alternates: {
+    canonical: `${websiteURL}`,
+  },
   openGraph: {
-    title: "Image to PDF Converter - JPG, PNG & TIFF to PDF Online",
+    title:
+      "JPG to PDF, PNG to PDF & TIFF to PDF Converter (Online & Desktop App)",
     description:
-      "Easily convert your images to PDF format. Turn JPG, PNG, and TIFF files into high-quality PDFs instantly with our secure and easy-to-use converter.",
+      "Easily convert your images to PDF format. Use our JPG to PDF, PNG to PDF, and TIFF to PDF converters online or as desktop apps with complete privacy and high-quality results.",
     url: `${websiteURL}`,
-    siteName: "Image to PDF Converter",
+    siteName: "Image to PDF Converters",
     images: [
       {
         url: "https://res.cloudinary.com/dgq2mp4fs/image/upload/v1721890438/frameworkteam/hero-img.png",
         width: 539,
         height: 438,
-        alt: "Convert JPG, PNG, and TIFF to PDF Online",
+        alt: "JPG to PDF, PNG to PDF & TIFF to PDF Converters Online & Desktop",
       },
     ],
     locale: "en_US",

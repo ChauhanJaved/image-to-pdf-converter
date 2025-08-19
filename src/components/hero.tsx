@@ -46,7 +46,7 @@ const Hero = () => {
         <div className="flex flex-col bg-transparent pt-5 pb-7 text-center">
           <SectionHeader
             caption={"Free Image to PDF Converter"}
-            desc="Easily convert JPG, PNG, and TIFF images to high-quality PDFs online — fast, secure, and free."
+            desc="Easily convert images to PDF using our free online tools or desktop applications"
             element="h1"
           />
         </div>

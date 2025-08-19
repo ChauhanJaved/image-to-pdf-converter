@@ -1,39 +1,46 @@
 import { portfolioItems } from "@/data/portfolio-items";
-import { ProductIDs } from "@/data/website-data";
+import { ProductIDs, websiteURL } from "@/data/website-data";
 import type { MetadataRoute } from "next";
 export const dynamic = "force-static";
 export default function sitemap(): MetadataRoute.Sitemap {
-  const portfolioItemDesktop = portfolioItems.find(
-    (item) => item.id === ProductIDs.TIFFtoPDFConverterDesktop,
-  );
   return [
     {
-      url: `${portfolioItemDesktop?.productWebsite}`,
+      url: `${websiteURL}`,
       lastModified: new Date(),
       priority: 1,
     },
     {
-      url: `${portfolioItemDesktop?.productWebsite}/index.html`,
+      url: `${websiteURL}/index.html`,
       lastModified: new Date(),
       priority: 0.9,
     },
     {
-      url: `${portfolioItemDesktop?.productWebsite}/help.html`,
+      url: `${websiteURL}/${ProductIDs.JPGtoPDFConverterWeb}.html`,
       lastModified: new Date(),
       priority: 0.8,
     },
     {
-      url: `${portfolioItemDesktop?.productWebsite}/batch-tiff-pdf-conversion.html`,
+      url: `${websiteURL}/${ProductIDs.PNGtoPDFConverterWeb}.html`,
       lastModified: new Date(),
       priority: 0.8,
     },
     {
-      url: `${portfolioItemDesktop?.productWebsite}/how-to-merge-tiff-to-pdf.html`,
+      url: `${websiteURL}/${ProductIDs.TIFFtoPDFConverterWeb}.html`,
       lastModified: new Date(),
       priority: 0.8,
     },
     {
-      url: `${portfolioItemDesktop?.productWebsite}/how-to-split-tiff-into-pdf.html`,
+      url: `${websiteURL}/${ProductIDs.JPGtoPDFConverterDesktop}.html`,
+      lastModified: new Date(),
+      priority: 0.8,
+    },
+    {
+      url: `${websiteURL}/${ProductIDs.PNGtoPDFConverterDesktop}.html`,
+      lastModified: new Date(),
+      priority: 0.8,
+    },
+    {
+      url: `${websiteURL}/${ProductIDs.TIFFtoPDFConverterDesktop}.html`,
       lastModified: new Date(),
       priority: 0.8,
     },

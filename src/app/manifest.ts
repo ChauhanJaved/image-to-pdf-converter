@@ -1,10 +1,12 @@
 import type { MetadataRoute } from "next";
 export const dynamic = "force-static";
+
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: `TIFF to PDF Converter`,
-    short_name: `TIFF to PDF`,
-    description: "TIFF to PDF Converter",
+    name: `Image to PDF Converter`,
+    short_name: `Image to PDF`,
+    description:
+      "Convert JPG, PNG, and TIFF images to PDF with our fast, secure Image to PDF Converter.",
     start_url: "/",
     display: "standalone",
     background_color: "#fff",
