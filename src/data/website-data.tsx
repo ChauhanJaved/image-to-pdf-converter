@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { ReactNode } from "react";
 
+export const websiteURL: string = "https://www.image-to-pdf-converter.com";
 export const headerCompanyName: string = "FrameworkTeam";
 export const companyName: string = "FrameworkTeam Softwares";
 export const email: string = "support@frameworkteam.com";
@@ -14,7 +15,7 @@ export const headerNavItems: string[] = [
   HeaderNavItems.Home,
   HeaderNavItems.Contact,
 ];
-export const websiteURL: string = "http://image-to-pdf-converter.com";
+
 export const indexMetadata: Metadata = {
   title:
     "JPG to PDF, PNG to PDF & TIFF to PDF Converter (Online & Desktop App)",
@@ -53,6 +54,16 @@ export const indexMetadata: Metadata = {
     ],
     locale: "en_US",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "JPG to PDF, PNG to PDF & TIFF to PDF Converter (Online & Desktop App)",
+    description:
+      "Convert JPG, PNG, and TIFF images to PDF instantly—online or with secure desktop apps. Fast, private, and easy to use.",
+    images: [
+      "https://res.cloudinary.com/dgq2mp4fs/image/upload/v1721890438/frameworkteam/hero-img.png",
+    ],
   },
   robots: {
     index: true,
@@ -158,22 +169,25 @@ export type ProductSubTitles =
 
 export const productWebsites = {
   JPGtoPDFConverterWeb: "https://www.pdf-tiff-tools.com/jpg-to-pdf-converter",
-  JPGtoPDFConverterDesktop: "http://www.jpg-to-pdf-converter.com",
+  JPGtoPDFConverterDesktop:
+    "https://www.pdf-tiff-tools.com/jpg-to-pdf-converter-desktop",
   PNGtoPDFConverterWeb: "https://www.pdf-tiff-tools.com/png-to-pdf-converter",
-  PNGtoPDFConverterDesktop: "https://www.png-to-pdf-converter.com",
+  PNGtoPDFConverterDesktop:
+    "https://www.pdf-tiff-tools.com/png-to-pdf-converter-desktop",
   TIFFtoPDFConverterWeb: "https://www.pdf-tiff-tools.com/tiff-to-pdf-converter",
-  TIFFtoPDFConverterDesktop: "https://www.tiff-to-pdf-converter.com",
+  TIFFtoPDFConverterDesktop:
+    "https://www.pdf-tiff-tools.com/tiff-to-pdf-converter-desktop",
 } as const;
 export type ProductWebsite =
   (typeof productWebsites)[keyof typeof productWebsites];
 
 export const productDownloadLinks = {
   JPGtoPDFConverter:
-    "https://jpg-to-pdf-converter.com/downloads/jpg-to-pdf-converter-setup.exe",
+    "https://www.jpg-to-pdf-converter.com/downloads/jpg-to-pdf-converter-setup.exe",
   PNGtoPDFConverter:
-    "https://png-to-pdf-converter.com/downloads/png-to-pdf-converter-setup.exe",
+    "https://www.png-to-pdf-converter.com/downloads/png-to-pdf-converter-setup.exe",
   TIFFtoPDFConverter:
-    "https://tiff-to-pdf-converter.com/downloads/tiff-to-pdf-converter-setup.exe",
+    "https://www.tiff-to-pdf-converter.com/downloads/tiff-to-pdf-converter-setup.exe",
 } as const;
 export type ProductDownloadLinks =
   (typeof productDownloadLinks)[keyof typeof productDownloadLinks];

@@ -122,7 +122,7 @@ export const PNGtoPDFConverterDesktop: portfolioItem = {
       title: `Free ${productTitles.PNGtoPDFConverterDesktop} for Windows |  Fast & Secure PNG to PDF Tool`,
       description:
         "Convert PNG files to PDF with our fast and free Windows software. Enjoy a user-friendly interface, batch processing, advanced compression settings, and customizable options to ensure top-quality PDF output.",
-      url: `https://www.frameworkteam.com/${ProductIDs.PNGtoPDFConverterDesktop}.html`,
+      url: productWebsites.PNGtoPDFConverterDesktop,
       siteName: `${productTitles.PNGtoPDFConverterDesktop} for Windows`,
       images: [
         {
@@ -137,6 +137,18 @@ export const PNGtoPDFConverterDesktop: portfolioItem = {
       ],
       locale: "en_US",
       type: "article",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `Free ${productTitles.PNGtoPDFConverterDesktop} for Windows | Fast & Secure PNG to PDF Tool`,
+      description:
+        "Convert PNG files to PDF with our fast and free Windows software. Enjoy a user-friendly interface, batch processing, advanced compression settings, and customizable options to ensure top-quality PDF output.",
+      images: [
+        cloudinaryLoader({
+          src: productImages.PNGtoPDFConverterDesktop.imgName,
+          width: productImages.PNGtoPDFConverterDesktop.width,
+        }),
+      ],
     },
   },
 };

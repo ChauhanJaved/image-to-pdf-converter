@@ -103,5 +103,17 @@ export const PNGtoPDFConverterWeb: portfolioItem = {
       locale: "en_US",
       type: "website",
     },
+    twitter: {
+      card: "summary_large_image",
+      title: `Free ${productTitles.PNGtoPDFConverterWeb} Online | Convert PNG Images to PDF Instantly`,
+      description:
+        "Convert PNG images to high-quality PDF files instantly with our free web tool. Enjoy secure, offline processing, drag-and-drop functionality, and complete PDF customization options—all in your browser.",
+      images: [
+        cloudinaryLoader({
+          src: productImages.PNGtoPDFConverterWeb.imgName,
+          width: productImages.PNGtoPDFConverterWeb.width,
+        }),
+      ],
+    },
   },
 };
