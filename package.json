@@ -1,5 +1,5 @@
 {
-  "name": "tiff-to-pdf-converter",
+  "name": "image-to-pdf-converter",
   "version": "0.1.0",
   "private": true,
   "scripts": {
