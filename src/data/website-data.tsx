@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import { ReactNode } from "react";
 
 export const websiteURL: string = "https://www.image-to-pdf-converter.com";
+export const siteName: string = "pdf-tiff-tools.com";
 export const headerCompanyName: string = "FrameworkTeam";
 export const companyName: string = "FrameworkTeam Softwares";
 export const email: string = "support@frameworkteam.com";
@@ -81,8 +82,14 @@ export const productImages = {
   JPGtoPDFConverterWeb: {
     title: "JPG to PDF Converter Online",
     imgName: `/${headerCompanyName.toLowerCase()}/${"jpg-to-pdf-converter-web-icon".toLowerCase()}`,
-    width: 1170,
-    height: 2532,
+    width: 1024,
+    height: 1024,
+  },
+  JPGtoPDFConverterWebOG: {
+    title: "JPG to PDF Converter Online",
+    imgName: `/${headerCompanyName.toLowerCase()}/${"jpg-to-pdf-converter-web-icon-og".toLowerCase()}`,
+    width: 1200,
+    height: 630,
   },
   JPGtoPDFConverterDesktop: {
     title: "JPG to PDF Converter",
@@ -96,6 +103,12 @@ export const productImages = {
     width: 1024,
     height: 1024,
   },
+  PNGtoPDFConverterWebOG: {
+    title: "PNG to PDF Converter Online",
+    imgName: `/${headerCompanyName.toLowerCase()}/${"png-to-pdf-converter-web-icon-og".toLowerCase()}`,
+    width: 1200,
+    height: 630,
+  },
   PNGtoPDFConverterDesktop: {
     title: "PNG to PDF Converter",
     imgName: `/${headerCompanyName.toLowerCase()}/${"png-to-pdf-converter".toLowerCase()}`,
@@ -108,6 +121,12 @@ export const productImages = {
     width: 1024,
     height: 1024,
   },
+  TIFFtoPDFConverterWebOG: {
+    title: "TIFF to PDF Converter Online",
+    imgName: `/${headerCompanyName.toLowerCase()}/${"tiff-to-pdf-converter-web-icon-og".toLowerCase()}`,
+    width: 1200,
+    height: 630,
+  },
   TIFFtoPDFConverterDesktop: {
     title: "TIFF to PDF Converter",
     imgName: `/${headerCompanyName.toLowerCase()}/${"tiff-to-pdf-converter".toLowerCase()}`,
@@ -117,16 +136,16 @@ export const productImages = {
 };
 export enum Categories {
   All = "All",
-  WebApp = "Web App",
-  DesktopApp = "Desktop App",
+  Online = "Online",
+  Desktop = "Desktop",
   Converter = "Converter",
   Splitter = "Splitter",
   Merger = "Merger",
 }
 export const categoryList: string[] = [
   Categories.All,
-  Categories.WebApp,
-  Categories.DesktopApp,
+  Categories.Online,
+  Categories.Desktop,
   Categories.Converter,
   Categories.Splitter,
   Categories.Merger,
@@ -168,15 +187,16 @@ export type ProductSubTitles =
   (typeof productSubTitles)[keyof typeof productSubTitles];
 
 export const productWebsites = {
-  JPGtoPDFConverterWeb: "https://www.pdf-tiff-tools.com/jpg-to-pdf-converter",
+  JPGtoPDFConverterWeb: "https://www.pdf-tiff-tools.com/jpg-to-pdf-converter/",
   JPGtoPDFConverterDesktop:
-    "https://www.pdf-tiff-tools.com/jpg-to-pdf-converter-desktop",
-  PNGtoPDFConverterWeb: "https://www.pdf-tiff-tools.com/png-to-pdf-converter",
+    "https://www.pdf-tiff-tools.com/jpg-to-pdf-converter-desktop/",
+  PNGtoPDFConverterWeb: "https://www.pdf-tiff-tools.com/png-to-pdf-converter/",
   PNGtoPDFConverterDesktop:
-    "https://www.pdf-tiff-tools.com/png-to-pdf-converter-desktop",
-  TIFFtoPDFConverterWeb: "https://www.pdf-tiff-tools.com/tiff-to-pdf-converter",
+    "https://www.pdf-tiff-tools.com/png-to-pdf-converter-desktop/",
+  TIFFtoPDFConverterWeb:
+    "https://www.pdf-tiff-tools.com/tiff-to-pdf-converter/",
   TIFFtoPDFConverterDesktop:
-    "https://www.pdf-tiff-tools.com/tiff-to-pdf-converter-desktop",
+    "https://www.pdf-tiff-tools.com/tiff-to-pdf-converter-desktop/",
 } as const;
 export type ProductWebsite =
   (typeof productWebsites)[keyof typeof productWebsites];
@@ -205,4 +225,5 @@ export interface portfolioItem {
   features: string[];
   description?: ReactNode;
   metaData: Metadata;
+  jsonLd?: Record<string, unknown> | Record<string, unknown>[];
 }

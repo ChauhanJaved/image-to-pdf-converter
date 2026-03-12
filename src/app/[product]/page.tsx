@@ -104,7 +104,7 @@ export default async function Page({ params }: Props) {
 
               <div className="mt-10 flex w-full flex-col justify-center md:flex-row">
                 {/* ----- Box-1 ----- */}
-                {portfolioItem.categories[1] === Categories.WebApp ? (
+                {portfolioItem.categories[1] === Categories.Online ? (
                   <ProductImageWebApp
                     src={portfolioItem.src}
                     width={portfolioItem.width}

@@ -16,7 +16,7 @@ export const PNGtoPDFConverterDesktop: portfolioItem = {
   src: productImages.PNGtoPDFConverterDesktop.imgName,
   width: productImages.PNGtoPDFConverterDesktop.width,
   height: productImages.PNGtoPDFConverterDesktop.height,
-  categories: [Categories.All, Categories.DesktopApp, Categories.Converter],
+  categories: [Categories.All, Categories.Desktop, Categories.Converter],
   pageLink: `/${ProductIDs.PNGtoPDFConverterDesktop}`,
   productWebsite: productWebsites.PNGtoPDFConverterDesktop,
   downloadLink: productDownloadLinks.PNGtoPDFConverter,
@@ -137,18 +137,6 @@ export const PNGtoPDFConverterDesktop: portfolioItem = {
       ],
       locale: "en_US",
       type: "article",
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: `Free ${productTitles.PNGtoPDFConverterDesktop} for Windows | Fast & Secure PNG to PDF Tool`,
-      description:
-        "Convert PNG files to PDF with our fast and free Windows software. Enjoy a user-friendly interface, batch processing, advanced compression settings, and customizable options to ensure top-quality PDF output.",
-      images: [
-        cloudinaryLoader({
-          src: productImages.PNGtoPDFConverterDesktop.imgName,
-          width: productImages.PNGtoPDFConverterDesktop.width,
-        }),
-      ],
     },
   },
 };

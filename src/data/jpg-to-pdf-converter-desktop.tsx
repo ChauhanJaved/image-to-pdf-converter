@@ -1,3 +1,4 @@
+// src/data/jpg-to-pdf-converter-desktop.tsx
 import {
   Categories,
   portfolioItem,
@@ -16,7 +17,7 @@ export const JPGtoPDFConverterDesktop: portfolioItem = {
   src: productImages.JPGtoPDFConverterDesktop.imgName,
   width: productImages.JPGtoPDFConverterDesktop.width,
   height: productImages.JPGtoPDFConverterDesktop.height,
-  categories: [Categories.All, Categories.DesktopApp, Categories.Converter],
+  categories: [Categories.All, Categories.Desktop, Categories.Converter],
   pageLink: `/${ProductIDs.JPGtoPDFConverterDesktop}`,
   productWebsite: productWebsites.JPGtoPDFConverterDesktop,
   downloadLink: productDownloadLinks.JPGtoPDFConverter,
@@ -125,18 +126,18 @@ export const JPGtoPDFConverterDesktop: portfolioItem = {
     </div>
   ),
   metaData: {
-    title: `Free ${productTitles.JPGtoPDFConverterDesktop} for Windows | Fast & Secure JPG to PDF Tool`,
+    title: `Download Free ${productTitles.JPGtoPDFConverterDesktop} for Windows | Offline, Secure & Fast`,
     keywords:
-      "JPG to PDF Converter, JPEG to PDF Converter, Convert JPG to PDF, Batch JPG to PDF, Windows PDF Converter, Image to PDF Tool",
+      "offline jpg to pdf, secure image to pdf, download jpg to pdf converter, windows 10 pdf tool, windows 11 pdf converter, merge jpg to pdf, combine images to pdf, desktop pdf software, JPG to PDF Converter, JPEG to PDF Converter, Convert JPG to PDF, Batch JPG to PDF, Windows PDF Converter, Image to PDF Tool",
     description:
-      "Easily convert JPEG files to PDF with our fast and free Windows software. Enjoy a user-friendly interface, batch processing, and customizable settings to ensure top-quality PDF output.",
+      "Securely convert JPG images to PDF offline on Windows 11/10. Batch process files, merge to single PDF, and rearrange pages. Fast, free download, no internet required.",
     alternates: {
       canonical: productWebsites.JPGtoPDFConverterDesktop,
     },
     openGraph: {
-      title: `Free ${productTitles.JPGtoPDFConverterDesktop} for Windows |  Fast & Secure JPG to PDF Tool`,
+      title: `Download Free ${productTitles.JPGtoPDFConverterDesktop} for Windows | Offline, Secure & Fast`,
       description:
-        "Easily convert JPEG files to PDF with our fast and free Windows software. Enjoy a user-friendly interface, batch processing, and customizable settings to ensure top-quality PDF output.",
+        "Securely convert JPG images to PDF offline on Windows 11/10. Batch process files, merge to single PDF, and rearrange pages. Fast, free download, no internet required.",
       url: productWebsites.JPGtoPDFConverterDesktop,
       siteName: `${productTitles.JPGtoPDFConverterDesktop} for Windows`,
       images: [
@@ -151,13 +152,14 @@ export const JPGtoPDFConverterDesktop: portfolioItem = {
         },
       ],
       locale: "en_US",
-      type: "article",
+      type: "website",
     },
     twitter: {
       card: "summary_large_image",
-      title: `Free ${productTitles.JPGtoPDFConverterDesktop} for Windows | Fast & Secure JPG to PDF Tool`,
+      title: `Download Free ${productTitles.JPGtoPDFConverterDesktop} for Windows | Offline, Secure & Fast`,
       description:
-        "Easily convert JPEG files to PDF with our fast and free Windows software. Enjoy a user-friendly interface, batch processing, and customizable settings to ensure top-quality PDF output.",
+        "Securely convert JPG images to PDF offline on Windows 11/10. Batch process files, merge to single PDF, and rearrange pages. Fast, free download, no internet required.",
+      creator: "@pdftifftools",
       images: [
         cloudinaryLoader({
           src: productImages.JPGtoPDFConverterDesktop.imgName,
@@ -165,5 +167,23 @@ export const JPGtoPDFConverterDesktop: portfolioItem = {
         }),
       ],
     },
+  },
+  jsonLd: {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: productTitles.JPGtoPDFConverterDesktop,
+    operatingSystem: "Windows 7, Windows 8, Windows 10, Windows 11",
+    applicationCategory: "ProductivityApplication",
+    offers: {
+      "@type": "Offer",
+      price: "0.00",
+      priceCurrency: "USD",
+    },
+    downloadUrl: productDownloadLinks.JPGtoPDFConverter,
+    featureList: "Offline conversion, Batch processing, Secure, Merge PDF",
+    image: cloudinaryLoader({
+      src: productImages.JPGtoPDFConverterDesktop.imgName,
+      width: productImages.JPGtoPDFConverterDesktop.width,
+    }),
   },
 };
