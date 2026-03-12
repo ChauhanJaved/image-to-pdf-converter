@@ -9,32 +9,32 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-      url: `${websiteURL}/${ProductIDs.JPGtoPDFConverterWeb}`,
+      url: `${websiteURL}/${ProductIDs.JPGtoPDFConverterWeb}/`,
       lastModified: new Date(),
       priority: 0.8,
     },
     {
-      url: `${websiteURL}/${ProductIDs.PNGtoPDFConverterWeb}`,
+      url: `${websiteURL}/${ProductIDs.PNGtoPDFConverterWeb}/`,
       lastModified: new Date(),
       priority: 0.8,
     },
     {
-      url: `${websiteURL}/${ProductIDs.TIFFtoPDFConverterWeb}`,
+      url: `${websiteURL}/${ProductIDs.TIFFtoPDFConverterWeb}/`,
       lastModified: new Date(),
       priority: 0.8,
     },
     {
-      url: `${websiteURL}/${ProductIDs.JPGtoPDFConverterDesktop}`,
+      url: `${websiteURL}/${ProductIDs.JPGtoPDFConverterDesktop}/`,
       lastModified: new Date(),
       priority: 0.8,
     },
     {
-      url: `${websiteURL}/${ProductIDs.PNGtoPDFConverterDesktop}`,
+      url: `${websiteURL}/${ProductIDs.PNGtoPDFConverterDesktop}/`,
       lastModified: new Date(),
       priority: 0.8,
     },
     {
-      url: `${websiteURL}/${ProductIDs.TIFFtoPDFConverterDesktop}`,
+      url: `${websiteURL}/${ProductIDs.TIFFtoPDFConverterDesktop}/`,
       lastModified: new Date(),
       priority: 0.8,
     },
